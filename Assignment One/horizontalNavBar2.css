@@ -1,0 +1,63 @@
+h1 {
+  font-family: Helvetica;
+  font-weight: 100;
+}
+body {
+  color:#333;
+  text-align:center;
+  font-family: arial;
+}
+
+.nav1 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.nav1 li {
+	float: left;
+	width: 160px;
+	position: relative;
+}
+
+.nav1 li a {
+	background: #222;
+	color: #fff;
+	display: block;
+	padding: 7px 8px;
+	text-decoration: none;
+	border-top: 1px solid #08E;
+}
+
+.nav1 li a:hover {
+	color: purple;
+}
+
+/*=== submenu ===*/
+
+.nav1 ul {
+	display: none;
+	position: absolute;
+	margin-left: 0px;
+	list-style: none;
+	padding: 0px;
+}
+
+.nav1 ul li {
+	width: 160px;
+	float: left;
+}
+
+.nav1 ul a {
+	display: block;
+	height: 15px;
+	padding: 7px 8px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #222;
+}
+
+.nav1 ul li a:hover {
+	color: mediumpurple;
+}
+

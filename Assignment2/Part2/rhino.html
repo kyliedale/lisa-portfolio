@@ -1,0 +1,233 @@
+
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rhino</title>
+<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Acme">
+<link rel=stylesheet href="css/site.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $("img.imageToFadeIn").hover(
+            function() {
+                $(this).stop().animate({"opacity": "1"}, "slow");
+            },
+            function() {
+                $(this).stop().animate({"opacity": "0"}, "slow");
+            });
+
+    });
+  </script>
+<!--script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script-->
+<!--script>if (screen.width < 640)  document.write('<style>.adsbygoogle { display: none }</style>');</script-->
+</head>
+<div id="main">
+<style>
+.cycle-slideshow, .cycle-slideshow * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+.cycle-slideshow {
+    /*width: 35%;*/
+    width: 800px;
+    height: 600px;
+    min-width: 200px;
+    margin: auto;
+    padding: 0;
+}
+
+/* anchors */
+.cycle-slideshow > a {
+    position: absolute;
+    top: 0;
+    left: 100;
+    width: 800px; padding: 0; background-color: #222; display: block;
+}
+
+/* images */
+.cycle-slideshow > a > img {
+    width: 800px;
+    position: static;
+    display: block;
+}
+
+/* divs */
+.cycle-slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    padding: 0;
+}
+
+.composite-example > div { background: white }
+.composite-example > div > img { display: block; }
+.composite-example > div .cycle-overlay {
+    color: white;
+    background: black;
+    opacity: .8;
+    filter:alpha(opacity=60);
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+    padding: 15px;
+}
+
+.cycle-slide p {
+    margin: 0;
+    padding: 10px
+}
+.slideText {
+    font-family: sans-serif;
+    font-size: 1.4em;
+    width: 1000px;
+    height: 700px;
+}
+h2,p {
+    font-family: sans-serif;
+}
+
+h1 {
+  position: relative;
+  top: 150px;
+}
+
+/*First row*/
+#row1col1 {
+    position:absolute;
+    left: 50px;
+    top:  800px;
+    width: 150px;
+    height: 110px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+}
+#row1col2 {
+    position:absolute;
+    left: 250px;
+    top:  800px;
+    width: 150px;
+    height: 110px;
+    background-color: #FFFFFF;
+    margin-top: 40px;
+}
+#row1col3 {
+  position:absolute;
+  left: 450px;
+  top:  800px;
+  width: 150px;
+  height: 110px;
+  background-color: #FFFFFF;
+  margin-top: 40px;
+}
+#row1col4 {
+  position:absolute;
+  left: 650px;
+  top:  800px;
+  width: 150px;
+  height: 110px;
+  background-color: #FFFFFF;
+  margin-top: 40px;
+}
+#row1col5 {
+  position:absolute;
+  left: 850px;
+  top:  800px;
+  width: 150px;
+  height: 110px;
+  background-color: #FFFFFF;
+  margin-top: 40px;
+}
+#content {
+  position:absolute;
+  left: 20px;
+  top:  -20px;
+}
+</style>
+
+<!--However, images are the default slide type so to use other elements you need to
+override the <code>slides</code> option as show on this page.  The <code>slides</code> option
+can be set to any valid jQuery selector.  The default value is <code>> img</code>
+which is a selector to find all image elements that are immediate children of the slideshow
+container.-->
+
+
+<h2 id="divs"></h2>
+
+
+<div class="cycle-slideshow composite-example"
+    data-cycle-fx="fade"
+    data-cycle-timeout="6000"
+    data-cycle-slides="> div"
+    >
+    <!-- Text and images below are adapted from https://www.elance.com/samples/architectural-project-description-graphic-design-amp-layout/28178291/ -->
+
+    <div class=slideText style=background:#ddd>
+        <h2>&nbsp;Rhino</h2>
+        <p>
+          This project was an assignment in Rhino. I had to measure and learn new tools in the Rhino software in order to model everyday objects
+        <p>
+          I modeled a water bottle, a chair, a pen, a light, and an iphone. This project allowed me to do research and watch instructional videos in additon to the in class lectures. It was fascinating discovering all the tools and opportunities Rhino possessed with modeling and rendering.
+        <p>
+
+
+    </div>
+
+    <div class=slideText>
+        <img src="images/Rhino/chair.jpg" width="1000" height="700" >
+        <div class="cycle-overlay">Plan of the Subdivision</div>
+    </div>
+    <div class=slideText>
+        <img src="images/Rhino/iphone.jpg" width="1000" height="700" >
+        <div class="cycle-overlay">Street view of the subdivision</div>
+    </div>
+    <div class=slideText>
+        <img src="images/Rhino/lamp.jpg" width="1000" height="700" >
+        <div class="cycle-overlay">Aerial view of the subdivision</div>
+    </div>
+    <div class=slideText>
+        <img src="images/Rhino/pen.jpg" width="1000" height="700" >
+        <div class="cycle-overlay">Aerial view of the subdivision</div>
+    </div>
+    <div class=slideText>
+        <img src="images/Rhino/waterbottle.jpg" width="1000" height="700" >
+        <div class="cycle-overlay">Aerial view of the subdivision</div>
+    </div>
+</div>
+
+<h1>Rhino</h1>
+
+<div id="row1col1" style="background-image: url('images/grayscale/birdwatch_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="drawings" href="drawings.html">
+          <img class="imageToFadeIn" src="images/drawings/birdwatch.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col2" style="background-image: url('images/grayscale/Landscapedpark_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="model" href="model.html">
+          <img class="imageToFadeIn" src="images/Models/Landscapedpark.png" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col3" style="background-image: url('images/grayscale/bird_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="photography" href="photography.html">
+          <img class="imageToFadeIn" src="images/photography/bird.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col4" style="background-image: url('images/grayscale/chair_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="rhino" href="rhino.html">
+          <img class="imageToFadeIn" src="images/Rhino/chair.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col5" style="background-image: url('images/grayscale/3_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="inspiration" href="inspiration.html">
+          <img class="imageToFadeIn" src="images/inspiration/3.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+
+
+ <!-- #main -->
+
+</body>
+</html>

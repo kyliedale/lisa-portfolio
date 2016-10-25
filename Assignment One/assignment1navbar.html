@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html>
+  <head>
+      
+    <title>Navigation Bar</title>
+      
+    <!-- Load jQuery and jQueryUI -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.easing.1.3.js"></script>
+      
+    <!-- Source for our javascript files that use jQUERY -->
+    <script src="script2.js"></script>
+      
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#content").load("homeslideshow.html");
+            
+            //Home:
+            $("#home").click(function(){
+                $("#content").load("homeslideshow.html");
+            
+            });
+            
+            //ENVD 2120:    
+            $("#FallingWater").click(function(){
+                $("#content").load("fallingwaterslide.html");
+            });
+            $("#Midterm").click(function(){
+                $("#content").load("envd2120midterm.html");
+            });
+            $("#Final").click(function(){
+                $("#content").load("envd2120final.html");
+            });
+            
+            //ENVD 2130:
+            $("#BoulderCreek").click(function(){
+                $("#content").load("bouldercreekslide.html");
+            });
+            $("#Midterm").click(function(){
+                $("#content").load("envd2130midterm.html");
+            });
+            $("#Final").click(function(){
+                $("#content").load("envd2130final.html");
+            });
+            
+            //REVIT:
+            $("#CabinRedraft").click(function(){
+                $("#content").load("revitcabin.html");
+            }); 
+            $("#CommercialProject").click(function(){
+                $("#content").load("commercialproject.html");
+            });
+            
+            //FAMOUS WORK:
+            $("#Calatrava").click(function(){
+                $("#content").load("calatravaslide.html");
+            }); 
+            $("#Gehry").click(function(){
+                $("#content").load("gehryslide.html");
+            });
+            $("#Wright").click(function(){
+                $("#content").load("wrightslide.html");
+            }};
+        });
+
+  </script>
+      
+    <!-- Link to the cascading stylesheet for this HTML page -->
+    <link rel="stylesheet" href="horizontalNavBar2.css" />
+      <style>
+          .nav1 {
+              position: relative; 
+              z-index: 100;
+          }
+          #content {
+              position: absolute; 
+              z-index: -1;
+          }
+      </style>
+      
+  </head>
+    
+  <body>
+    <!-- Use this navigation div as your menu bar div -->
+  	<div class="navigation">
+  		<ul class="nav1">
+  			<li>
+  				<a id="home" href="#">Home</a>
+  			</li>
+  			<li>
+  				<a id="ENVD2120" href="#">ENVD 2120</a>
+  				<ul>
+  					<li><a id="FallingWater" href="#">Falling Water</a></li>
+  					<li><a id="Midterm" href="#">Midterm</a></li>
+  					<li><a id="FinalProject" href="#">Final Project</a></li>
+  				</ul>
+  			</li>
+            <li>
+  				<a id="ENVD2130" href="#">ENVD 2130</a>
+  				<ul>
+  					<li><a id="BoulderCreek" href="#">Boulder Creek</a></li>
+  					<li><a id="Midterm" href="#">Midterm</a></li>
+  					<li><a id="Final" href="#">Final</a></li>
+  				</ul>
+  			</li>
+  			<li>
+  				<a id="REVIT" href="#">REVIT</a>
+  				<ul>
+  					<li><a id="CabinRedraft" href="#">Cabin Redraft</a></li>
+  					<li><a id="CommercialProject" href="#">Commercial Project</a></li>
+                </ul>
+  			</li>
+  			<li>
+                <a id="FAMOUSWORK" href="#">FAMOUS WORK</a>
+  				<ul>
+  					<li><a id="Calatrava" href="#">Calatrava</a></li>
+  					<li><a id="Gehry" href="#">Gehry</a></li>
+  					<li><a id="Wright" href="#">Wright</a></li>
+
+  				</ul>
+  			</li>
+  		</ul>
+  	</div>
+      <br><br>
+      <div id="content"></div>
+  </body>
+</html>

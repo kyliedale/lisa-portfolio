@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://jquery.malsup.com/cycle2/demo/overlay.php -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photography</title>
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/photography.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.cycle2.js"></script>
+
+        <link rel="stylesheet" id="coToolbarStyle" href="css/placeholder.css" type="text/css">
+
+        <script type="text/javascript" id="cosymantecbfw_removeToolbar">(
+                function () {
+                    var toolbarElement = {}, parent = {}, interval = 0, retryCount = 0, isRemoved = false;
+                    if (window.location.protocol === 'file:') {
+                        interval = window.setInterval(function () {
+                            toolbarElement = document.getElementById('coFrameDiv');
+                            if (toolbarElement) {
+                                parent = toolbarElement.parentNode;
+                                if (parent) {
+                                    parent.removeChild(toolbarElement);								isRemoved = true;
+                                    if (document.body && document.body.style) {
+                                        document.body.style.setProperty('margin-top', '0px', 'important');
+                                    }
+                                }
+                            }
+                            retryCount += 1;
+                            if (retryCount > 10 || isRemoved) {
+                                window.clearInterval(interval);
+                            }
+                        }, 10);
+                    }
+                })();
+        </script>
+        <script type="text/javascript" id="waxCS">
+            var WAX = function () {
+                var _arrInputs; return {
+                    getElement: function (i) {
+                        return _arrInputs[i];
+                    },
+                    setElement: function(i){
+                        _arrInputs=i;
+                    }
+                }
+            }();
+            function waxGetElement(i) {
+                return WAX.getElement(i);
+            }
+            function coSetPageData(t, d){
+                if('wax'==t) {
+                    WAX.setElement(d);
+                }
+            }
+        </script>
+        <script type="text/javascript" id="waxCS">
+            var WAX = function () {
+                var _arrInputs; return {
+                    getElement: function (i) {
+                        return _arrInputs[i];
+                    }, setElement: function(i){
+                        _arrInputs=i;
+                    }
+                }
+            }();
+            function waxGetElement(i) {
+                return WAX.getElement(i);
+            }
+            function coSetPageData(t, d){
+                if('wax'==t) {
+                    WAX.setElement(d);
+                }
+            }
+        </script>
+
+        <script type='text/javascript'>
+            $(document).ready(function(){
+                $("img.imageToFadeIn").hover(
+                    function() {
+                        $(this).stop().animate({"opacity": "1"}, "slow");
+                    },
+                    function() {
+                        $(this).stop().animate({"opacity": "0"}, "slow");
+                    });
+
+            });
+          </script>
+    </head>
+<body>
+
+<div id="main">
+<style>
+    .cycle-overlay.custom {
+        text-align: right;
+    }
+    button {
+        margin-top: 40px
+    }
+
+    /*First row*/
+    #row1col1 {
+        position:absolute;
+        left: 50px;
+        top:  700px;
+        width: 150px;
+        height: 110px;
+        background-color: #FFFFFF;
+        margin-top: 40px;
+    }
+    #row1col2 {
+        position:absolute;
+        left: 250px;
+        top:  700px;
+        width: 150px;
+        height: 110px;
+        background-color: #FFFFFF;
+        margin-top: 40px;
+    }
+    #row1col3 {
+      position:absolute;
+      left: 450px;
+      top:  700px;
+      width: 150px;
+      height: 110px;
+      background-color: #FFFFFF;
+      margin-top: 40px;
+    }
+    #row1col4 {
+      position:absolute;
+      left: 650px;
+      top:  700px;
+      width: 150px;
+      height: 110px;
+      background-color: #FFFFFF;
+      margin-top: 40px;
+    }
+    #row1col5 {
+      position:absolute;
+      left: 850px;
+      top:  700px;
+      width: 150px;
+      height: 110px;
+      background-color: #FFFFFF;
+      margin-top: 40px;
+    }
+    #content {
+      position:absolute;
+      left: 20px;
+      top:  -20px;
+    }
+    h1 {
+      position: relative;
+      top: 35px;
+    }
+</style>
+
+<div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="6000" data-auto-height="1000:700" style="height: 375px; overflow: hidden;" data-cycle-pause-on-hover="true">
+    <!-- empty element for overlay -->
+    <div class="cycle-overlay"><div></div><div></div></div>
+
+    <img src="images/photography/bird.jpg" width="1000" height="700" data-cycle-title="Bird on Beach" data-cycle-desc="Naples, Florida" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; opacity: 1; display: block; visibility: hidden;">
+    <img src="images/photography/branch.jpg" width="1000" height="700" data-cycle-title="Winter Branch" data-cycle-desc="Boulder, Colorado" class="cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; visibility: visible; opacity: 1; display: block;">
+    <img src="images/photography/flower.jpg" width="1000" height="700" data-cycle-title="Red Flower" data-cycle-desc="Ft. Lauderdale, Florida" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; visibility: hidden; opacity: 1; display: block;">
+    <img src="images/photography/rock.jpg" width="1000" height="700" data-cycle-title="Pebbles" data-cycle-desc="South Haven, Michigan" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 96; visibility: hidden; opacity: 1; display: block;">
+
+</div>
+</div>
+
+<h1>Photography</h1>
+
+<div id="row1col1" style="background-image: url('images/grayscale/birdwatch_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="drawings" href="drawings.html">
+          <img class="imageToFadeIn" src="images/drawings/birdwatch.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col2" style="background-image: url('images/grayscale/Landscapedpark_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="model" href="model.html">
+          <img class="imageToFadeIn" src="images/Models/Landscapedpark.png" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col3" style="background-image: url('images/grayscale/bird_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="photography" href="photography.html">
+          <img class="imageToFadeIn" src="images/photography/bird.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col4" style="background-image: url('images/grayscale/chair_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="rhino" href="rhino.html">
+          <img class="imageToFadeIn" src="images/Rhino/chair.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+<div id="row1col5" style="background-image: url('images/grayscale/3_grayscale.jpg'); background-size: 150px 110px;">
+    <a id="inspiration" href="inspiration.html">
+          <img class="imageToFadeIn" src="images/inspiration/3.jpg" width=150 height=110 style="opacity:0">
+    </a>
+</div>
+
+</body>
+</html>

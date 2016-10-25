@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+
+    <title>Lisa Myszkowski</title>
+
+    <!-- Load jQuery and Cycle -->
+
+	 <!-- Load jQuery and jQueryUI -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.easing.1.3.js"></script>
+
+    <!-- Source for our javascript files that use jQUERY -->
+    <script src="script2.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            // Automatically load the automatically cycling slideshow when the page loads:
+            $("#content").load("homepage.html");
+
+            // Drawings:
+            $("#drawings").click(function(){
+                $("#content").load("drawings.html");
+            });
+
+            // Model:
+            $("#model").click(function(){
+                $("#content").load("model.html");
+            });
+
+            // Photography:
+            $("#photography").click(function(){
+                $("#content").load("photography.html");
+            });
+
+			      // Rhino:
+            $("#rhino").click(function(){
+                $("#content").load("rhino.html");
+            });
+
+			      // Inspiration:
+            $("#inspiration").click(function(){
+                $("#content").load("inspiration.html");
+            });
+        });
+
+  </script>
+
+    <script type='text/javascript'>
+        $(document).ready(function(){
+            $("img.imageToFadeIn").hover(
+                function() {
+                    $(this).stop().animate({"opacity": "1"}, "slow");
+                },
+                function() {
+                    $(this).stop().animate({"opacity": "0"}, "slow");
+                });
+
+        });
+      </script>
+
+    <style>
+
+    /*First row*/
+    #row1col1 {
+        position:absolute;
+        left: 50px;
+        top:  800px;
+        width: 150px;
+        height: 110px;
+        background-color: #FFFFFF;
+        margin-top: 40px;
+    }
+    #row1col2 {
+        position:absolute;
+        left: 250px;
+        top:  800px;
+        width: 150px;
+        height: 110px;
+        background-color: #FFFFFF;
+        margin-top: 40px;
+    }
+    #row1col3 {
+        position:absolute;
+        left: 450px;
+        top:  800px;
+        width: 150px;
+        height: 110px;
+        background-color: #FFFFFF;
+        margin-top: 40px;
+    }
+    #row1col4 {
+      position:absolute;
+      left: 650px;
+      top:  800px;
+      width: 150px;
+      height: 110px;
+      background-color: #FFFFFF;
+      margin-top: 40px;
+    }
+    #row1col5 {
+        position:absolute;
+        left: 850px;
+        top:  800px;
+        width: 150px;
+        height: 110px;
+        background-color: #FFFFFF;
+        margin-top: 40px;
+    }
+    #content {
+      position:absolute;
+      left: 20px;
+            top:  -20px;
+    }
+    </style>
+
+  </head>
+
+  <!-- TODO: add grayscale images -->
+
+  <body>
+    <div id="row1col1" style="background-image: url('images/grayscale/birdwatch_grayscale.jpg'); background-size: 150px 110px;">
+        <a id="drawings" href="drawings.html">
+              <img class="imageToFadeIn" src="images/drawings/birdwatch.jpg" width=150 height=110 style="opacity:0">
+        </a>
+    </div>
+    <div id="row1col2" style="background-image: url('images/grayscale/Landscapedpark_grayscale.jpg'); background-size: 150px 110px;">
+        <a id="model" href="model.html">
+              <img class="imageToFadeIn" src="images/Models/Landscapedpark.png" width=150 height=110 style="opacity:0">
+        </a>
+    </div>
+    <div id="row1col3" style="background-image: url('images/grayscale/bird_grayscale.jpg'); background-size: 150px 110px;">
+        <a id="photography" href="photography.html">
+              <img class="imageToFadeIn" src="images/photography/bird.jpg" width=150 height=110 style="opacity:0">
+        </a>
+    </div>
+    <div id="row1col4" style="background-image: url('images/grayscale/chair_grayscale.jpg'); background-size: 150px 110px;">
+        <a id="rhino" href="rhino.html">
+              <img class="imageToFadeIn" src="images/Rhino/chair.jpg" width=150 height=110 style="opacity:0">
+        </a>
+    </div>
+    <div id="row1col5" style="background-image: url('images/grayscale/3_grayscale.jpg'); background-size: 150px 110px;">
+        <a id="inspiration" href="inspiration.html">
+              <img class="imageToFadeIn" src="images/inspiration/3.jpg" width=150 height=110 style="opacity:0">
+        </a>
+    </div>
+
+      <div id="content"></div>
+  </body>
+</html>

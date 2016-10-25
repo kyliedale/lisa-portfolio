@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Non-linear Button Slideshow</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="http://malsup.github.com/jquery.easing.1.3.js"></script>
+
+<!--The following script is modified to remove buttons, slow down the speed of the slide fades and set the timeout (the amount of time between slide fades) -->
+<script type="text/javascript">
+$(function() {
+    $('#s4').before('<div id="nav">').cycle({ 
+            speed:  1000, //Speed of slide change is slowed to 1 second (1000 milliseconds).
+            timeout: 4000,//The time between slide fades is set to 4 seconds (4000 milliseconds).
+            pager:  ''    //Pager is set to empty quotes to remove the buttons.
+        });
+});
+
+</script>
+
+<!--This style sheet is removed, since its only purpose was to determine how the buttons looked. -->
+<!--style>
+    #nav a { 
+        border: 1px solid #ccc; 
+        background: #fff; 
+        text-decoration: none; 
+        margin: 0 5px; 
+        padding: 5px; 
+        position:relative;
+        top:730px;
+    }
+    #nav a.activeSlide { 
+        background: #aaa; 
+    }
+    #nav a:focus { 
+        outline: none; 
+    } 
+</style-->
+
+</head>
+<body bgcolor=#C9BBAA>
+
+<div id="s4" class="pics">
+    <img src="architectureImages/anmah2_1000x700.jpg" width="1000" height="700" />
+    <img src="architectureImages/Olivier-Dwek-House-1000x700.jpg" width="1000" height="700" />
+    <img src="architectureImages/Firmenzentrale_Kaffee_HQ_1000x700.jpg" width="1000" height="700" />
+    <img src="architectureImages/WayneCableAquaTower_1000x700.jpg" width="1000" height="700" />
+    <img src="architectureImages/MicrosoftMinimalistArchitecture_1000x700.jpg" width="1000" height="700" />
+    <img src="architectureImages/DiamondSuspendedHouse_1000x700.jpg" width="1000" height="700" />
+    <img src="architectureImages/Performance_Center_1000x700.jpg" width="1000" height="700" />
+    <img src="architectureImages/Utzon-Sydney_Opera_House_1000x700.png" width="1000" height="700" />
+</div>
+
+    
+</body>
+</html>
