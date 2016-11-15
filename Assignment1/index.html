@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+
+    <title>Navigation Bar</title>
+
+    <!-- Load jQuery and jQueryUI -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.easing.1.3.js"></script>
+
+    <!-- Source for our javascript files that use jQUERY -->
+    <script src="script2.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#content").load("loadable-autoFadeInSlideShow.html");
+
+            //Home:
+            $("#home").click(function(){
+                $("#content").load("loadable-autoFadeInSlideShow.html");
+            });
+
+            //Calatrava:
+            $("#Calatrava").click(function(){
+                $("#content").load("loadableCalatravaNonlinearSlideshow.html");
+            });
+
+            //Gehry:
+            $("#Gehry").click(function(){
+                $("#content").load("loadableGehryNonlinearSlideshow.html");
+            });
+
+            //Wright:
+            $("#Wright").click(function(){
+                $("#content").load("loadableWrightNonlinearSlideshow.html");
+            });
+
+            //Gaudi:
+            $("#Gaudi").click(function(){
+                $("#content").load("loadableGaudiNonlinearSlideshow.html");
+            });
+
+            //Studio:
+            $("#Studio").click(function(){
+                $("#content").load("loadableStudioNonlinearSlideshow.html");
+            });
+
+            //Misc:
+            $("#Misc").click(function(){
+                $("#content").load("loadableMiscNonlinearSlideshow.html");
+            });
+        });
+
+  </script>
+
+    <!-- Link to the cascading stylesheet for this HTML page -->
+    <link rel="stylesheet" href="horizontalNavBar2.css" />
+      <style>
+          .nav1 {
+              position: relative;
+              z-index: 100;
+          }
+          #content {
+              position: absolute;
+              z-index: -1;
+          }
+      </style>
+
+  </head>
+
+  <body>
+    <!-- Use this navigation div as your menu bar div -->
+  	<div class="navigation">
+  		<ul class="nav1">
+  			<li>
+  				<a id="home" href="#">Home</a>
+  			</li>
+        <li>
+  				<a id="architects" href="#">Architects</a>
+          <ul>
+  					<li><a id="Calatrava">Calatrava</a></li>
+  					<li><a id="Gehry">Gehry</a></li>
+  					<li><a id="Wright">Wright</a></li>
+  				</ul>
+  			</li>
+  			<li>
+  				<a id="Gaudi" href="#">Gaudi</a>
+  			</li>
+            <li>
+  				<a id="Studio" href="#">Studio</a>
+  			</li>
+  			<li>
+  				<a id="Misc" href="#">Misc</a>
+  			</li>
+  		</ul>
+  	</div>
+      <br><br>
+      <div id="content"></div>
+  </body>
+</html>
