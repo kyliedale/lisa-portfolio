@@ -93,7 +93,6 @@ li a {
 /* Change the link color on hover */
 li a:hover {
     background-color: transparent;
-    color: var(--main-gray);
 }
 
 .active {
