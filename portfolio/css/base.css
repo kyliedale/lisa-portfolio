@@ -178,11 +178,31 @@ ul li ul.dropdown li {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#description {
+  width: 235px;
+  height: 150px;
+  background-color: black;
+  position: relative;
+  top: -150px;
+  opacity: 0.8;
+  display: none;
+}
+
+.project-image {
+  height: 235px;
 }
 
 .project-image:hover {
   opacity: 0.5;
+  /*height: 235px;*/
 }
+
+/*.hover-opac:hover {
+  opacity: 0.5;
+}*/
 
 .project-title {
   font-size: 0.75em;
