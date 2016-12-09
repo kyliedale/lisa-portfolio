@@ -1,0 +1,27 @@
+@import url("base.css");
+
+.cycle-slideshow {
+  overflow: none;
+}
+
+.cycle-slide {
+  position: fixed;
+  margin-top: 50px;
+  /*top: 50px;*/
+}
+
+.cycle-slide-active {
+  position: fixed;
+  margin-top: 50px;
+}
+
+.cycle-pager {
+  text-align: center;
+  font-size: 50px;
+  color: #a8a8a8;
+  margin-top: 50px;
+}
+
+.cycle-pager-active {
+  color: #D8BFD8;
+}
