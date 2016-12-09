@@ -183,6 +183,15 @@ ul li ul.dropdown li {
   margin-bottom: 50px;
 }
 
+.too-few {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.not-enough {
+  margin-right: 31px;
+}
+
 #description {
   width: 235px;
   height: 150px;
