@@ -29,3 +29,19 @@
 .cycle-pager-active {
   color: #D8BFD8;
 }
+
+.description-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  margin-left: 235px;
+  padding-bottom: 20px;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 100;
+  max-width: 350px;
+  margin-left: 235px;
+}
