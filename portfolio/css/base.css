@@ -199,12 +199,8 @@ ul li ul.dropdown li {
 
 .project-image:hover {
   opacity: 0.5;
-  /*height: 235px;*/
 }
 
-/*.hover-opac:hover {
-  opacity: 0.5;
-}*/
 
 .project-title {
   font-size: 1em;
