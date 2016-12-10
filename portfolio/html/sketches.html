@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lisa Myszkowski</title>
+<link rel="shortcut icon" href="../images/LM.png">
+<link rel=stylesheet href="http://fonts.googleapis.com/css?family=Acme">
+<link rel=stylesheet href="../css/subpage.css">
+<!-- <link rel=stylesheet href="css/inspiration.css"> -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../js/jquery.cycle2.js"></script>
+
+</head>
+<body>
+
+<div id="main">
+
+  <script src="../js/jquery.cycle2.scrollVert.js"></script>
+
+  <script type='text/javascript'>
+    $(document).ready(function(){
+        $("img.imageToFadeIn").hover(
+            function() {
+                $(this).stop().animate({"opacity": "1"}, "slow");
+            },
+            function() {
+                $(this).stop().animate({"opacity": "0"}, "slow");
+            });
+
+    });
+  </script>
+
+  <style>
+    .external { position: static }
+    .external > * { margin: 0 5px }
+    .cycle-pager { display: block; }
+    .example-pager { text-align: center; width: 100%; z-index: 500; top: 10px; overflow: hidden; }
+    .example-pager span { font-size: 50px; width: 16px; height: 16px; display: inline-block; color: #ddd; }
+    .example-pager span.cycle-pager-active { color: #D69746;}
+    .example-pager > * { cursor: pointer;}
+
+    #content {
+      position:absolute;
+      left: 20px;
+      top:  -20px;
+    }
+    h1 {
+      position: relative;
+      top: 35px;
+    }
+  </style>
+  <ul id="horizontal-menu">
+    <img class="logo" src="../images/LM.png">
+    <span class="name"><a class="active" href="index.html">Lisa Myszkowski</a></span>
+    <li><a href="about.html">ABOUT ME</a></li>
+    <li><a href="artwork.html">ARTWORK</a></li>
+    <li>
+      <a id="portfolio-menu-item">PORTFOLIO</a>
+      <ul class="dropdown">
+        <li><a href="port-year1.html">YEAR 1</a></li>
+        <li><a href="port-year2.html">YEAR 2</a></li>
+        <li><a href="port-year3.html" class="last-item">YEAR 3</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="cycle-slideshow"
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=0
+    >
+    <!-- empty element for pager links -->
+    <div class="cycle-pager"></div>
+    <img src="../images/drawings/sketches/sketch1.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch2.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch3.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch4.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch5.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch6.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch7.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch8.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch9.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch10.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch11.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch12.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch13.jpg" width="800" height="700" >
+    <img src="../images/drawings/sketches/sketch14.jpg" width="800" height="700" >
+  </div>
+
+  <h1 class="description-heading">SKETCHES</h1>
+  <p class="description">I grew up taking private art classes and art classes at
+    school. I really enjoy artistic expresssion through sketching, photography,
+    and painting. Practicing art has helped me with hand drafting and obtaining
+    a better understanding of dimensions.
+  </p>
+
+</div>
+
+</body>
+</html>
